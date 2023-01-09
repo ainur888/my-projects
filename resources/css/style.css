@@ -1,0 +1,469 @@
+
+/* 
+=============================================================================================
+            WEbside Name: RAFAYEL A SINGLE PAGE WEBSEIDE
+            ATHUR: AINRU RAHMNA
+            DATE:10.10.2022
+            EMAIL:ainurrahman820@gmail.com
+            WEBSEITE:NONE.
+============================================================================================= */
+
+
+/* 
+                            ===================================
+                                            CSS IDNEX
+                            * COMMON CSS
+                            * REUSABLE COMPONENT
+
+                            1.HEADER SECTION
+                            2.SERVICVE SECTION
+                            3.PORTFOLIO SECTION
+                            4.CONTACT SECTION
+                            5.FOOTER SECTION
+                            =================================== */
+
+
+                                        /* COMMON CSS 
+                                           ========== */ 
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+
+}   
+body {
+    font-size: 10px;
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    line-height:1.6;
+    font-weight:400;
+    box-sizing: border-box;
+    text-rendering: optimizeLegibility;
+    scroll-behavior: smooth;
+
+}
+ 
+                                        
+
+
+
+
+
+
+
+
+                                        /* REUSABLE COMPONETN 
+                                           ===================  */
+                                           
+.row {
+    max-width: 114rem;
+    margin: auto;
+}  
+section,
+header,footer {
+    margin: 0 1rem;
+    padding: 0 .5rem;
+}
+
+ul {
+    margin: 0;
+}
+ul li {
+    list-style-type: none;
+}
+                                        
+
+
+
+
+
+
+                                           /* HEADER SECTION  */
+
+header {
+    background: linear-gradient(rgba(231, 197, 196, 0.7),rgba(231, 197, 196, 0.7)), url(./image/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    
+    overflow: hidden;
+    height: 100vh;
+    text-align: center;
+}
+.logo {
+    float: left;
+    height: 4rem;
+    width: auto;
+    margin-top: 1rem;
+    border-radius: 50%;
+
+}
+.main-nav {
+    float: right;
+    margin-top: 1rem;
+}
+.main-nav li {
+    display: inline-block;
+}
+
+.main-nav li:hover {
+    background: rgba(82, 78, 78, 0.8);
+    border-radius: .5rem;
+    color: #fff;
+
+}
+
+.main-nav li a{
+    font-size: 1.4rem;
+    color: #333;
+    text-decoration: none;
+    margin: 0 .6rem;
+    text-transform: uppercase;
+    transition: .5s;
+}
+
+                              /* Humburger menu bar  */
+
+.mobile-menu span {
+    color:#fff;
+    font-size: 3rem;
+    float: right;
+    top: 3rem;
+    right: 3rem;
+    display: none;
+}
+.mobile-menu span:hover {
+    cursor: pointer;
+}
+.overlay {
+    width: 0%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(51, 51, 51, 0.8);
+    z-index:9999;
+    overflow-x: hidden;
+    transition: 1s;
+}
+.close-btn { 
+    font-size: 3rem;
+    color: #fff;
+    float: right;
+    top: .6rem;
+    right: 1rem;
+    position: absolute;
+}
+.overlay-content {
+    position: relative;
+    top: 10%;
+    text-align: center;
+}
+.overlay-content a {
+    color: #fff;
+    font-size: 2rem;
+    display: block;
+    top: 20%;
+    text-decoration: none;
+}
+.overlay-content a:hover {
+    font-size: 2.6rem;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.hero-text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    color: black;
+    width: 100%;
+     
+}
+
+h1 {
+    font-size: 3rem;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    
+}
+.hero-text-box h1::after {
+    content: '';
+    width: 40%;
+    background: #333;
+    display: block;
+    height: .1rem;
+    margin: auto;
+}
+.hero-text-box p {
+    font-size: 1.6rem;
+    color: #333;
+    margin-top: .5rem;
+    
+}
+.btn-link {
+    margin-top: 6rem;
+}
+.hero-text-box .btn-hero {
+    font-size: 1.4rem;
+    color: rgb(235, 229, 229);
+    border: .1rem solid #333;
+    padding: .6rem 1.6rem;
+    background:rgba(133, 6, 2, 0.7);
+    border-radius: .5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+.hero-text-box .btn-hero:hover {
+    background: transparent;
+    color:black;
+}
+
+
+
+                                           /* ========================
+                                               SERVICE SECTION
+                                            ========================  */
+
+section{
+    background: skyblue;
+    height: auto;
+    padding: 6rem 0;
+}
+.first-part {
+    text-align: center;
+}
+.first-part h2{
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 3rem;
+}
+.first-part p {
+    width: 60%;
+    margin: auto;
+    font-size: 1.2rem;
+    color: #333;
+    margin-bottom: 5rem;
+}
+.grid-template-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1rem;
+}
+
+.grid-template-items {
+    text-align: center;
+    color: #333;
+}
+.grid-template-items i { 
+    font-size: 2.6rem;
+}
+.grid-template-items i:hover {
+    cursor: pointer;
+}
+
+.grid-template-items h3 {
+    font-size: 1.6rem;
+    margin-top: 1.2rem;
+}
+.grid-template-items p {
+    text-align: justify;
+    width: 80%;
+    margin:auto;
+    font-size: 1rem;
+    margin-top: 2rem;
+}
+
+
+                                          /* ========================
+                                               PORTFOLIO SECTION
+                                            ========================  */
+
+.portfolio-grid-template-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-rows: minmax(250px, auto);
+    grid-gap: 1rem;
+}
+
+.portfolio-grid-temlate-items:nth-child(1){
+    background: url(../img/1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.portfolio-grid-temlate-items:nth-child(2){
+    background: url(../img/2.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio-grid-temlate-items:nth-child(3){
+    background: url(../img/3.jpg);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+
+.portfolio-grid-temlate-items:nth-child(4){
+    background: url(../img/4.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio-grid-temlate-items:nth-child(5){
+    background: url(../img/5.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio-grid-temlate-items:nth-child(6){
+    background: url(../img/6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio-grid-temlate-items:nth-child(7){
+    background: url(../img/7.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.portfolio-grid-temlate-items:nth-child(8){
+    background: url(../img/8.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.btn-cta {
+   
+    color: #fff;
+    text-align: center;
+    margin-top: 4rem;
+}
+.btn-cta a {
+    border: .1rem solid rgb(189, 53, 53);
+    background: rgb(226, 4, 4);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: .5rem 1.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+}
+.btn-cta a:hover {
+    background: transparent;
+}
+
+                                           /* ========================
+                                               CONTACT SECTION
+                                            ========================  */
+    
+.contact-section {
+    background: linear-gradient(rgba(87, 87, 104, 0.7),rgba(110, 110, 121, 0.7)), url(./image/bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+}
+
+
+.contact-header  {
+    font-size: 2rem;
+    color: #fff;
+    text-align: center;
+
+}
+.contact-header h2 {
+    margin-bottom: 2rem;
+}
+.contact-header h2::after {
+    content: "" ;
+    width:20%;
+    background:#fff;
+    border: .1rem solid #fff;
+    display: block;
+    margin: auto;
+}
+.contact-section form {
+    width: 80%;
+    margin-left: 10%;
+}
+.contact-section input[type="text"], 
+.contact-section input[type="email"],
+.contact-section textarea {
+    width: 100%;
+    padding: .8rem 0;
+    border-radius: .4rem;
+    background: rgba(233, 227, 227, 0.6);
+}
+.contact-section textarea {
+    height: 20rem;
+}
+.btn {
+    border: .1rem solid rgb(189, 53, 53);
+    background: rgb(226, 4, 4);
+    color: #fff;
+    font-size: 1.2rem;
+    padding: .5rem 1.6rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: .5rem;
+}
+.btn:hover {
+    background: transparent;
+    border: .1rem dashed rgb(226, 4, 4);;
+}
+
+    
+
+                                           /* ========================
+                                               FOOTER SECTION
+                                            ========================  */
+footer {
+    background: rgb(41, 18, 248);
+    padding: 3rem 0;
+    text-align: center;
+}
+footer  ul li {
+    display: inline-block;
+    margin: 0 .5rem;
+}
+footer  ul li  a {
+    color: #fff;
+    font-size: 1rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+footer p {
+    font-size: .8rem;
+    margin-top: .5rem;
+    text-transform: capitalize;
+}
